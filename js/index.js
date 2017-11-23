@@ -26,6 +26,10 @@ $(function () {
             }
         }, 1500)
     })
+    // 切换内容
+    $(".information_nav li").click(function(){
+        $(this).addClass("on").siblings().removeClass("on");
+    })
     // 头部
     $("#menu li").click(function () {
         $(this).addClass("active").siblings().removeClass("active");
@@ -125,7 +129,10 @@ $(function () {
         $('body,html').animate({scrollTop:4550},800); 
     });
     $("#page6").click(function () {
-        $('body,html').animate({scrollTop:4950},800); 
+        $('body,html').animate({scrollTop:5250},800); 
+    });
+    $("#page7").click(function () {
+        $('body,html').animate({scrollTop:5750},800); 
     });
     //滚动到一定的高度之后执行动画
     function gdjz(div,fun,offset){
