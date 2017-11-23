@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* CSS Document */
+/*公共样式*/
+ul, li, ol, p, h1, h2, h3, h4, h5, h6, form, body, dl, dt, dd {
+	margin: 0;
+	padding: 0
+}
+ul, li, ol {
+	list-style: none
+}
+body {
+	font-size: 12px;
+	color: #666;
+	font-family: "微软雅黑", Arial;
+	min-width:1000px;
+}
+.clearfix {
+	clear: both;
+}
+.clearfix:after {
+	clear: both;
+	content: ".";
+	display: block;
+	font-size: 0;
+	line-height: 0;
+  	visibility: hidden;
+	width: 0;
+	height: 0
+}
+a {
+	color: #666;
+	text-decoration: none
+}
+a:hover {
+	color: #b32318;
+}
+img {
+	border: none;
+	outline: none;
+}
+.w{
+	width: 1050px;
+	margin: 0 auto;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.title{
+	height: 100px;
+	width:100%;
+	color: #000;
+	text-align: center;
+	padding-top: 20px;
+}
+.title .title_a{
+	font-size:28px;
+	color:#343434;
+}
+.title .title_b{
+	color:#1d1d1d;
+	font-size: 24px;
+}
+.title span{
+	color:#f8b62b;
+	margin-right: 10px;
+	font-size: 26px;
+}
+/* 案例 */
+.case{
+	background: #f7f7f7;
+	height: 439px;
+}
+.case .sanjiao{ 
+	margin-top:102px;
+	cursor: pointer;
+}
+.case_item{
+    width: 1000px;
+	height: 255px;
+	overflow: hidden;
+	margin-bottom: 50px;
+}
+.case_list_img{
+	width: 1000px;
+	height: 255px;
+	overflow: hidden;
+    white-space: nowrap;
+}
+.case_list{
+    display: inline;
+}
+
+.case ul li {
+    width: 300px;
+	padding: 30px 0px;
+	margin: 0 20px;
+	position: relative;
+	transition: all 11s;
+	box-sizing: border-box;
+    text-align: center;
+    margin:3px;
+    display:inline-block;
+}
+
+.case ul li div{
+	bottom:-50%;
+	position: absolute;
+	padding: 0px 3px;
+	box-sizing: border-box;
+	width: 100%;
+	height: 50%;
+	background: rgba(000, 000, 000, 0.5);
+	opacity: 0;
+	transition: all 1s;
+}
+.case ul li div p{
+	line-height: 70px;
+	color: #fff;
+	font-size: 23px;
+}
+.case ul li div button{
+	width: 80px;
+	line-height: 20px;
+	font-size: 13px;
+	display: block;
+	border: none;
+	background: #f96868;
+	color: #fff;
+	outline: none;
+	opacity: 1;
+	transition: all 2s;
+	cursor: pointer;
+	margin: 0 auto;
+}
+.case ul li:hover div{
+	opacity: 1;
+	bottom:0;
+}
+
+.case_list li img{
+	width: 100%;
+}
