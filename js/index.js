@@ -26,10 +26,6 @@ $(function () {
             }
         }, 1500)
     })
-    // 切换内容
-    $(".information_nav li").click(function(){
-        $(this).addClass("on").siblings().removeClass("on");
-    })
     // 头部
     $("#menu li").click(function () {
         $(this).addClass("active").siblings().removeClass("active");
